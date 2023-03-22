@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site SAE 303</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <!-- <div class="header__container--cloud">
+        <img class="header__img--cloud1" src="images/nuage.svg" alt="nuage" />
+        <img class="header__img--cloud2" src="images/nuage.svg" alt="nuage" />
+        <img class="header__img--cloud3" src="images/nuage.svg" alt="nuage" />
+      </div> -->
+
+      <nav class="nav" data-aos="fade-down">
+        <ul class="nav__items">
+          <li>
+            <a href="#uses">Les usages</a>
+          </li>
+          <li>
+            <a href="#pollution">Les menaces </a>
+          </li>
+          <li>
+            <a href="#temp">Les températures </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__container--titles">
+        <h1 class="header__title" data-aos="fade-up">
+          Le cycle de l'eau et le réchauffement climatique : l'assèchement des
+          ruisseaux
+        </h1>
+
+        <h2 class="header__subTitle" data-aos="fade-up">
+          En quoi l’évolution des températures et précipitations peuvent
+          influencer les assèchements de cours d’eau dans le Bas Rhin ?
+        </h2>
+      </div>
+
+      <div data-aos="fade-down" class="header__container--svg">
+        <img src="images/illustrations/header-illustration.svg" alt="" />
+      </div>
+    </header>
+
+    <main>
+      <!-- Section du motion design -->
+      <section id="motion" class="motion">
+        <!-- <img src="images/motion.png" alt="motion preview" /> -->
+        <video controls autoplay loop src="video/motion.mp4"></video>
+      </section>
+
+      <!-- Section des usages -->
+      <section id="uses" class="uses">
+        <img class="waves" src="images/waves/waves-1.svg" alt="waves effect" />
+        <h2 class="title uses__title" data-aos="fade-up">
+          Quels sont les usages de l'eau en France ?
+        </h2>
+        <img
+          data-aos="fade-up"
+          class="uses__img"
+          src="images/illustrations/usagedeleau.svg"
+          alt="usages de l'eau"
+        />
+        <img
+          class="waves waves--bottom"
+          src="images/waves/waves-2.svg"
+          alt="waves effect"
+        />
+      </section>
+
+      <!-- Section - Comment adopter un bon comportement -->
+      <section class="help">
+        <h2 class="title" data-aos="fade-up">
+          Comment adopter un comportement responsable et durable ?
+        </h2>
+        <p data-aos="fade-right" class="txt txt--center">
+          Il est important de préserver la ressource en eau pour assurer la
+          sécurité alimentaire, la santé humaine, la protection de
+          l'environnement, la préservation des activités économiques et la
+          stabilité sociale.
+        </p>
+      </section>
+
+      <!-- Section de la pollution  -->
+      <img
+        class="waves"
+        style="background: #1e6091"
+        src="images/waves/waves-300.svg"
+        alt=""
+      />
+      <section id="pollution" class="pollution">
+        <h2 class="title pollution__title" data-aos="fade-up">
+          Quelles sont les menaces qui pèsent sur la ressource en eau ?
+        </h2>
+
+        <div class="pollution__grid">
+          <div class="pollution__items pollution__items--1">
+            <img
+              data-aos="fade-left"
+              src="images/illustrations/poissons.svg"
+              alt="poissons"
+            />
+            <p class="txt">Destruction des habitats aquatiques</p>
+          </div>
+
+          <div class="pollution__items pollution__items--2">
+            <img
+              data-aos="fade-right"
+              src="images/illustrations/pneu.svg"
+              alt="pneu"
+            />
+            <p class="txt">Les dechets</p>
+          </div>
+
+          <div class="pollution__items pollution__items--3">
+            <img
+              data-aos="fade-left"
+              src="images/illustrations/sachet.svg"
+              alt="sachet"
+            />
+            <p class="txt">Les sacs en plastique</p>
+          </div>
+        </div>
+      </section>
+      <img
+        class="waves"
+        style="background: #168aad"
+        src="images/waves/waves-600.svg"
+        alt=""
+      />
+
+      <!-- Section - Pourquoi  -->
+      <section class="why">
+        <h2 class="title" data-aos="fade-up">
+          Pourquoi faut-il préserver la ressource en eau ?
+        </h2>
+        <div class="why__container">
+          <img
+            data-aos="fade-up"
+            src="images/illustrations/interogation.svg"
+            alt=""
+          />
+          <p data-aos="fade-right" class="txt">
+            Il est important de préserver la ressource en eau pour assurer la
+            sécurité alimentaire, la santé humaine, la protection de
+            l'environnement, la préservation des activités économiques et la
+            stabilité sociale.
+          </p>
+        </div>
+      </section>
+      <img
+        style="background-color: #daf2ff"
+        src="images/waves/waves-800.svg"
+        alt=""
+        class="waves"
+      />
+
+      <!-- Section des température  -->
+      <section id="temp" class="temp">
+        <h2 data-aos="fade-up" class="title temp__title">
+          Et avec des chiffres ? <br /><br />
+          <span style="font-size: 34px"
+            >Évolution de la température maximale de 2012 à 2022 à
+            Strasbourg</span
+          >
+        </h2>
+
+        <img
+          data-aos="fade-up"
+          class="temp__img"
+          src="images/illustrations/temp.svg"
+          alt=""
+        />
+      </section>
+      <img
+        style="background-color: #cfc3a5"
+        src="images/waves/waves-455.svg"
+        alt=""
+        class="waves"
+      />
+
+      <!-- Section - Les menaces  -->
+      <!-- <section class="menaces">
+        <h2 class="title">
+          Quelles sont les menaces qui pèsent sur la ressource en eau ?
+        </h2>
+        <p class="txt txt--center">
+          Les menaces pesant sur la ressource en eau incluent la pollution, la
+          surexploitation, les changements climatiques, la destruction des
+          habitats aquatiques, les barrages et les digues et la gestion
+          inappropriée de la ressource.
+        </p>
+      </section>
+      <img
+        class="waves"
+        style="background-color: #cfc3a5"
+        src="images/waves/waves-4.svg"
+        alt=""
+      /> -->
+
+      <!-- Section - précipitations -->
+      <section class="precipitations">
+        <img
+          data-aos="fade-left"
+          src="images/illustrations/graphique-precipitation_2.svg"
+          alt=""
+        />
+      </section>
+      <img
+        class="waves"
+        style="background-color: #b89379"
+        src="images/waves/waves-7.svg"
+        alt=""
+      />
+
+      <!-- Section - Ecoulement  -->
+
+      <section class="ecoulement">
+        <h2 data-aos="fade-up" class="title">
+          Evolution des écoulemécoulements des cours dans le Bas-Rhin entre 2012
+          et 2022
+        </h2>
+        <div data-aos="fade-down" class="ecoulement__container">
+          <canvas id="myChart" aria-label="chart" role="img"></canvas>
+        </div>
+      </section>
+
+      <!-- Section Conclusion -->
+      <img
+        class="waves"
+        style="background-color: #b89379"
+        src="images/waves/waves-01.svg"
+        alt=""
+      />
+      <section class="conclusion">
+        <p data-aos="fade-left" class="txt conclusion__txt">
+          Les changements des températures et des précipitations ont un impact
+          sur l'assèchement des cours d'eau dans le Bas-Rhin. Les données
+          montrent une tendance à la hausse des températures moyennes annuelles,
+          ainsi qu'une augmentation des précipitations intenses et des
+          sécheresses prolongées. Cela peut entraîner des changements dans le
+          régime hydrologique des cours d'eau. Pour prévenir l'évolution de ces
+          problèmes, il est essentiel de mettre en place des mesures de gestion
+          intégrée des ressources en eau qui visent à améliorer la disponibilité
+          de l'eau pour les usages humains, agricoles et industriels, tout en
+          protégeant les écosystèmes aquatiques.
+          <br />
+          <br />
+          <br />
+          Pour prévenir l'évolution des problèmes liés à l'assèchement des cours
+          d'eau dans le Bas-Rhin, il est nécessaire de prendre des mesures pour
+          réduire les effets des changements climatiques sur les ressources en
+          eau et d'améliorer la gestion des ressources en eau pour préserver les
+          écosystèmes aquatiques.  
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Site SAE303 - Groupe 5</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-autocolors"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

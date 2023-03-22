@@ -1,0 +1,357 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BASES */
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.waves {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.waves--bottom {
+  position: relative;
+  bottom: -1px;
+}
+
+/* TYPOS */
+.title {
+  margin: auto;
+  font-size: 23px;
+  color: #daf2ff;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.txt {
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  padding: 0 30px;
+}
+
+.txt--center {
+  max-width: 550px;
+  margin: 90px auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    line-height: 50px;
+    font-size: 60px;
+    max-width: 1100px;
+  }
+
+  .txt {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+
+/* HEADER */
+.header {
+  padding-top: 200px;
+  background-color: #d9f2ff;
+}
+
+/* Header nuages */
+.header__container--cloud {
+  position: relative;
+  overflow: hidden;
+}
+
+.header__container--cloud img {
+  position: absolute;
+  width: 130px;
+}
+
+.header__img--cloud1 {
+  top: 0px;
+
+  animation: anim 3s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Header txt */
+.header__container--titles {
+  padding: 60px 10px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 34px;
+  color: #184e77;
+  margin-bottom: 40px;
+}
+
+.header__subTitle {
+  color: #55a633;
+  font-size: 18px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+
+/* Header SVG */
+.header__container--svg img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container--titles {
+    padding: 60px;
+  }
+
+  .header__title {
+    font-size: 64px;
+  }
+
+  .header__subTitle {
+    font-size: 24px;
+  }
+}
+
+/* NAV */
+.nav {
+  position: absolute;
+  background-color: #184e77;
+  min-height: 72px;
+  padding: 30px 0;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.nav__items {
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.nav a {
+  font-size: 22px;
+  color: white;
+}
+
+/* SECTION MOTION */
+.motion video {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* SECTIONS USAGES */
+.uses {
+  background-color: #184e77;
+}
+
+.uses__title {
+  padding: 30px 10px;
+}
+
+.uses__img {
+  display: block;
+  width: 90%;
+  margin: 30px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .uses__title {
+    padding: 0;
+  }
+
+  .uses__img {
+    margin: 50px auto;
+    width: 80%;
+  }
+}
+
+/* SECTION COMPORTEMENTS */
+.help {
+  background-color: #1e6091;
+  font-size: 16px;
+  color: white;
+  padding-bottom: 90px;
+}
+
+/* SECTION TEMPERATURES */
+.temp {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 60px;
+  background-color: #daf2ff;
+}
+
+.temp__title {
+  margin-bottom: 50px;
+  color: #184e77;
+}
+
+.temp__img {
+  display: block;
+  max-width: 100%;
+  margin: 30px 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .temp {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .temp__title {
+    margin-bottom: 127px;
+  }
+
+  .temp__img {
+    margin: 30px auto;
+    width: 80%;
+  }
+}
+
+/* SECTION POLUTION */
+.pollution {
+  padding: 40px 0;
+  position: relative;
+  background-color: #1a759f;
+  color: white;
+}
+
+.pollution__title {
+  padding-left: 60px;
+  text-align: left;
+  max-width: 550px;
+  margin: 0;
+}
+
+.pollution__grid {
+  display: grid;
+  margin-top: 120px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+
+.pollution__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pollution__items img {
+  max-width: 150px;
+  margin-bottom: 30px;
+}
+
+.pollution__items p {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .pollution__grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* SECTION WHY */
+.why {
+  background-color: #168aad;
+}
+
+.why__container {
+  max-width: 1100px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 80px;
+}
+/* SECTION MENACES */
+.menaces {
+  padding: 120px 0 10px;
+  background-color: #34a8cb;
+}
+
+@media screen and (min-width: 768px) {
+  .menaces {
+    padding: 120px 0 10px;
+  }
+}
+
+/* SECTION PRECIPITATION */
+.precipitations {
+  background-color: #cfc3a5;
+}
+
+.precipitations img {
+  width: 80%;
+  max-width: 550px;
+  display: block;
+  margin: auto;
+}
+
+/* SECTION ECOULEMENT  */
+.ecoulement {
+  padding: 30px;
+  background: #b89379;
+}
+
+.ecoulement__container {
+  width: 100%;
+  margin: 90px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .ecoulement {
+    padding: 90px;
+  }
+}
+
+/* SECTION CONCLUSION */
+.conclusion {
+  padding-bottom: 120px;
+  background-color: #736052;
+}
+
+.conclusion__txt {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid gray;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #736052;
+}
